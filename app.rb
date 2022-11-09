@@ -7,7 +7,7 @@ DatabaseConnection.connect('book_store')
 sql = 'SELECT id, title, author_name FROM books;'
 result = DatabaseConnection.exec_params(sql, [])
 
-# Print out each record from the result set .
+# Print out each record frsfadsfom the result set .
 result.each do |record|
   p "#{record["id"]} - #{record["title"]} - #{record["author_name"]}"
 end
